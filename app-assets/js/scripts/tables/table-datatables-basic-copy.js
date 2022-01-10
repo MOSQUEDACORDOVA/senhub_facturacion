@@ -21,7 +21,13 @@ $(function () {
 
   if (dt_basic_table.length) {
     var dt_basic = dt_basic_table.DataTable({
-      ajax: assetPath + 'data/table-datatable-copy.json',
+      "processing": true,
+      "serverSide": true,
+        "ajax": {
+            "url": assetPath + 'data/table-datatable-copy.json',
+            "type": "GET"
+        },
+      
       columns: [
         { data: 'responsive_id' },
         { data: 'id' },

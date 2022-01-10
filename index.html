@@ -272,10 +272,18 @@
                         <p>Este un texto descriptivo acerca de los proyectos que contiene este cliente, 
                             en la barra de navegacion tambien se puede escoger el proyecto que controlara los demas modulos.
                         </p>
-                        <button class="btn btn-primary add-file-btn text-center" type="button" id="addNewFile" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">
-                        <span class="align-middle">Agregar proyecto</span>
-                        </button>
+                        <!-- add file button -->
+
+                                <div class="dropdown dropdown-actions" data-bs-toggle="modal" data-bs-target="#new-folder-modal">
+                                    <div class="mb-0">
+                                        <button class="btn btn-primary add-file-btn text-center" type="button" id="addNewFile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <span class="align-middle">Agregar proyecto</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                
+                        <!-- add file button ends -->
                     </div>
                 </div>
             </div>
@@ -771,19 +779,19 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">New Folder</h5>
+                                    <h5 class="modal-title">Nuevo proyecto</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <input type="text" class="form-control" value="New folder"
+                                    <input type="text" class="form-control" value="Nombre del proyecto"
                                         placeholder="Untitled folder" />
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary me-1"
-                                        data-bs-dismiss="modal">Create</button>
+                                        data-bs-dismiss="modal">Crear</button>
                                     <button type="button" class="btn btn-outline-secondary"
-                                        data-bs-dismiss="modal">Cancel</button>
+                                        data-bs-dismiss="modal">Cancelar</button>
                                 </div>
                             </div>
                         </div>

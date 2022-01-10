@@ -21,7 +21,7 @@ $(function () {
 
   if (dt_basic_table.length) {
     var dt_basic = dt_basic_table.DataTable({
-      ajax: assetPath + 'data/table-datatable.json',
+      ajax: assetPath + 'data/table-datatable-copy.json',
       columns: [
         { data: 'responsive_id' },
         { data: 'id' },
